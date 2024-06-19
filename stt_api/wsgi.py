@@ -1,5 +1,5 @@
 """
-WSGI config for nevisa_api project.
+WSGI config for stt_api project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
