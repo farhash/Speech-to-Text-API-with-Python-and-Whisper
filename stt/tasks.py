@@ -1,6 +1,6 @@
 from django.utils import timezone
 from .models import STTResult
-from nevisa_api.celery import app
+from stt_api.celery import app
 import logging
 import joblib
 
