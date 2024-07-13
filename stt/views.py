@@ -110,6 +110,7 @@ def upload_file(request: Request):
 		audio_path = saved_form.audio
 		data = {}
 		data["audio_url"] = f"{base_dir}/media/{audio_path}"
+		print("data is: ", data)
 		
 
 	if "audio_url" not in data:

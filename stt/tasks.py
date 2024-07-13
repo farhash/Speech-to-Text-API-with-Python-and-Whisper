@@ -35,7 +35,7 @@ def celery_stt(stt_result_key):
         markAsFailed(stt_task)
         return
     
-    stt_task.stt_result_script  = result
+    stt_task.stt_result_script  = result["text"]
     stt_task.stt_result_status  = "success"
     stt_task.stt_end_time       = timezone.now()
     stt_task.save()  
