@@ -6,3 +6,5 @@ Completed_model.joblib
 main
 stt_celery.service
 stt.service
+*/__pycache__
+*/migrations
