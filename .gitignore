@@ -8,3 +8,4 @@ stt_celery.service
 stt.service
 **/__pycache__/
 **migrations/
+test files/
