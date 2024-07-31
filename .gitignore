@@ -1,11 +1,10 @@
 env/
-saved_model/
 static/
 media/
-Completed_model.joblib
 main
-stt_celery.service
-stt.service
+services/
+temps/
 **/__pycache__/
-**migrations/
+**/migrations/
 test files/
+experiments/

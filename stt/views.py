@@ -110,8 +110,8 @@ def upload_file(request: Request):
 		audio_path = saved_form.audio
 		data = {}
 		data["audio_url"] = f"{base_dir}/media/{audio_path}"
-		print("data is: ", data)
-		
+	else:
+		return Response({"message": form.get_context}, status=status.HTTP_400_BAD_REQUEST)
 
 	if "audio_url" not in data:
 		logger.warning("Audio url doesn't exist")
@@ -146,5 +146,3 @@ def generateSTTResultResponse(stt_task):
 	response["stt_end_time"]       = stt_task.stt_end_time
 	response["audio_source_url"]   = stt_task.audio_source_url
 	return response 
-
-#endregion
